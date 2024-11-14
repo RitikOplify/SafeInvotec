@@ -2,7 +2,7 @@ import React from "react";
 
 const TurnkeySolutions = () => {
   return (
-    <div className="px-16 py-5 w-full">
+    <div className="py-5 w-full">
       <h1 className="text-center text-4xl mb-5 font-extrabold text-[#AA1F2E]">
         Turnkey Solutions
       </h1>
@@ -15,7 +15,7 @@ const TurnkeySolutions = () => {
           />
         </div>
         <div>
-          <h1 className="text-center text-3xl mb-4 font-bold">
+          <h1 className="text-center sm:text-3xl text-lg mb-4 font-bold">
             GAS DISTRIBUTION SYSTEM
           </h1>
           <p className=" mt-1 font-bold text-gray-600 text-center">

@@ -51,19 +51,19 @@ const IndustriesOverview = () => {
   );
 
   return (
-    <div className="px-16 py-5 w-full">
+    <div className="md:px-16 px-10 py-5 w-full">
       <h1 className="text-center text-4xl font-extrabold text-[#AA1F2E]">
         Integration Across Industries
       </h1>
       <div className=" flex justify-center pt-10">
-        <p className=" text-center w-3/5">
+        <p className=" lg:text-center lg:w-3/5 sm:text-lg text-left">
           In addition to our premium products, we provide value-added services
           such as cost reduction strategies, technical support for new
           applications, and quality improvement initiatives, ensuring that you
           receive the best possible solutions for your brazing needs.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-12 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-10">
         {industryRange.map((item) => {
           return (
             <div

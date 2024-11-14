@@ -2,11 +2,11 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="px-16 py-5 w-full">
+    <div className="md:px-16 px-10 py-5 w-full">
       <h1 className="text-center text-4xl font-extrabold text-[#AA1F2E]">
         Stay Engaged: Explore our New Blogs
       </h1>
-      <div className=" grid grid-cols-3 gap-5 mt-10">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
         <div>
           <img src="/Blogs/gasequipmenticon.jpg" className="h-48 object-contain" alt="blogs"/>
           <h2 className="font-bold mt-3 text-base text-[#212121]">

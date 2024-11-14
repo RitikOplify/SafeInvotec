@@ -4,9 +4,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className="px-16 py-5 w-full">
+      <div className="lg:px-16 px-10 py-5 w-full">
         {" "}
-        <div className=" flex gap-48 items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-48 items-start md:items-center">
           <div>
             <Image
               width={200}
@@ -25,9 +25,11 @@ const Footer = () => {
             <h1 className=" text-3xl mb-4 font-bold text-[#AA1F2E]">
               Would you like to start a project with us?
             </h1>
-            <div className=" flex mt-3">
-              <button className=" px-2 rounded-lg bg-[#AA1F2E] text-white">REQUEST A QUOTE</button>
-              <div className=" ml-5">
+            <div className=" flex mt-3 flex-wrap gap-2 sm:gap-4 items-start sm:items-center">
+              <button className="px-2 py-3 h-fit rounded-lg bg-[#AA1F2E] text-white">
+                REQUEST A QUOTE
+              </button>
+              <div className="">
                 <p>or give us a call at </p>
                 <p className=" font-bold text-xl text-[#AA1F2E]">
                   +91 9769035683
@@ -37,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=" h-1 w-full bg-black mt-10"></div>
-        <div className=" flex justify-between py-10">
+        <div className=" flex justify-between py-10 flex-wrap gap-10">
           <div className=" flex flex-col gap-1 ">
             <h1 className=" text-[#AA1F2E] font-bold text-xl mb-2">CONTACT</h1>
             <p>
@@ -92,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-blue-950 text-white flex justify-between px-16 py-3">
+      <div className=" bg-blue-950 text-white text-sm sm:text-lg flex justify-between md:px-16 px-10 py-3">
         <p>Copyright 2024 © Safe Invotec JCS LLP</p>
         <p> Privacy Policy | Terms & Condition</p>
       </div>
