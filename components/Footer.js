@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-blue-950 text-white text-sm sm:text-lg flex justify-between md:px-16 px-10 py-3">
+      <div className=" bg-blue-950 text-white text-xs sm:text-lg flex justify-between md:px-16 px-2 py-3">
         <p>Copyright 2024 © Safe Invotec JCS LLP</p>
         <p> Privacy Policy | Terms & Condition</p>
       </div>
