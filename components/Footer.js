@@ -65,10 +65,10 @@ const Footer = () => {
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               INFORMATION
             </h1>
-            <p className="hover:border-b text-base font-semibold w-fit text-[54565A]  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className="text-[#54565A] hover:border-b text-base font-semibold w-fit text-[54565A]  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               About Us
             </p>
-            <p className="hover:border-b text-base font-semibold w-fit text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className="text-[#54565A] hover:border-b text-base font-semibold w-fit text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               Contact Us
             </p>
           </div>
@@ -77,19 +77,19 @@ const Footer = () => {
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               PRODUCTS
             </h1>
-            <p className="hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               Industries Gas Equipment
             </p>
-            <p className="hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               Speciality Gas Equipment
             </p>
-            <p className="hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               Ultra High Purity Gas Equipment
             </p>
-            <p className="hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               Brazing Filler & Fluxes
             </p>
-            <p className="hover:border-b font-semibold w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className=" text-[#54565A] hover:border-b font-semibold w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               Gas Flux
             </p>
           </div>
@@ -97,7 +97,7 @@ const Footer = () => {
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               TURNKEY SOLUTIONS
             </h1>
-            <p className="hover:border-b font-semibold text-base text-[54565A] w-fit hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <p className=" text-[#54565A] hover:border-b font-semibold text-base text-[54565A] w-fit hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
               Gas Distribution System
             </p>
           </div>
