@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className=" flex md:hidden py-5 sm:px-10 px-3 justify-between items-center">
+      <div className="max-w-[1440px] flex md:hidden py-6 px-5 sm:px-10 justify-between items-center relative">
         <i
           className={`${
             isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
@@ -25,9 +25,8 @@ const Nav = () => {
           className=" object-cover"
           src="/Logo/SafeInvotecLogo.png"
         />
-      </div>
-      {isOpen && (
-        <div className=" flex md:hidden flex-col items-start absolute z-10 w-full bg-white gap-3 pb-5 sm:px-10 px-3">
+         {isOpen && (
+        <div className="flex md:hidden flex-col items-start absolute top-[100%] left-0 z-10 w-full bg-white gap-3 p-5 border">
           <Link
             className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
             href={""}
@@ -69,14 +68,25 @@ const Nav = () => {
           </button>
         </div>
       )}
-      <div className=" hidden md:block">
-        <div className=" bg-[#AA1F2E] text-white flex justify-end gap-5 py-4 pr-11">
+      </div>
+     
+      <div className="hidden md:block">
+        <div className=" bg-[#AA1F2E]">
+        <div className="h-[54px] items-center font-bold text-[14px] text-white flex justify-end gap-5 py-4 pr-11 max-w-[1440px] mx-auto">
           <Link href={""}>ABOUT US</Link>
+          <span>/</span>
           <Link href={""}>CERTIFICATIONS</Link>
+          <span>/</span>
+
           <Link href={""}>CAREERS</Link>
+          <span>/</span>
+
           <Link href={""}>CONTACT US</Link>
         </div>
-        <div className="flex justify-between items-center py-6 px-10">
+
+        </div>
+     
+        <div className="max-w-[1440px] mx-auto flex font-semibold text-[16px] text-[#000000] justify-between items-center py-6 px-10">
           <Image
             width={200}
             height={10}
@@ -87,7 +97,7 @@ const Nav = () => {
           <div className=" text-end flex gap-5 items-center ">
             <Link href={""}>PRODUCTS</Link>
             <Link href={""}>INDUSTRIES</Link>
-            <button className="bg-[#AA1F2E] py-2 px-3 rounded-lg text-white">
+            <button className="bg-[#AA1F2E] h-[42px] py-2 px-3 rounded-lg text-white">
               REQUEST A QUOTE
             </button>
           </div>

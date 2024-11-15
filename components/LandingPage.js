@@ -65,7 +65,7 @@ const LandingPage = () => {
     const startSlider = () => {
       interval = setInterval(() => {
         setActiveSlide((prevSlide) => prevSlide + 1);
-      }, 3500);
+      }, 6000);
     };
 
     const handleVisibilityChange = () => {
@@ -99,12 +99,12 @@ const LandingPage = () => {
         {[...slides, slides[0]].map((slide, index) => (
           <div
             key={index}
-            className="slide h-fit w-full flex-shrink-0 flex justify-start items-center relative overflow-hidden d-border"
+            className="slide h-fit w-full flex-shrink-0 flex justify-start items-center relative overflow-hidden"
           >
             <img
               src={slide.images}
               alt={slide.title}
-              className=" d-border w-full"
+              className=" w-full"
             />
             <div className="absolute top-[50%] transform -translate-y-1/2 flex items-center h-full w-[47%] z-10 bg-opacity-50 p-5 rounded-lg typewriter">
               <div>

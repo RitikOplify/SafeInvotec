@@ -3,10 +3,11 @@ import React, { useState, useEffect } from "react";
 
 export default function Exhibitions() {
   const [slides] = useState([
-    "Blogs/GasEquipment.jpg",
-    "Blogs/GasEquipment.jpg",
-    "Blogs/GasEquipment.jpg",
-    "Blogs/GasEquipment.jpg",
+   " https://safeinvotec.com/wp-content/uploads/2023/05/Welcome-to-safe-invotech.webp",
+   " https://safeinvotec.com/wp-content/uploads/2023/05/Welcome-to-safe-invotech.webp",
+   " https://safeinvotec.com/wp-content/uploads/2023/05/Welcome-to-safe-invotech.webp",
+   " https://safeinvotec.com/wp-content/uploads/2023/05/Welcome-to-safe-invotech.webp",
+
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -42,9 +43,10 @@ export default function Exhibitions() {
   };
 
   return (
-    <>
-      <div className="py-5 px-2 w-full">
-        <h1 className="text-center text-4xl font-extrabold text-[#AA1F2E] mb-10">
+    <div>
+  
+      <div className=" pb-[120px] max-w-[1440px] mx-auto px-5 sm:px-10 overflow-hidden" >
+        <h1 className="text-center text-4xl font-extrabold mb-[60px] text-[#AA1F2E]">
           Exhibitions
         </h1>
         <div className="flex gap-4 items-center justify-between">
@@ -61,7 +63,7 @@ export default function Exhibitions() {
               .map((slideContent, index) => (
                 <img
                   key={index}
-                  className="object-cover w-full h-48"
+                  className="object-cover w-full h-60"
                   src={slideContent}
                   alt="Exhibition slide"
                 />
@@ -76,6 +78,10 @@ export default function Exhibitions() {
           </button>
         </div>
       </div>
-    </>
+      
+   
+   
+    </div>
+  
   );
 }

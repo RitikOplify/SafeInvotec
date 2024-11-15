@@ -37,8 +37,10 @@ const ProductRange = () => {
   );
 
   return (
-    <div className="md:px-16 px-10 py-5 w-full">
-      <h1 className="text-center text-4xl font-extrabold text-[#AA1F2E]">
+
+    <div>
+   <div className="px-5 sm:px-10 pb-[100px] max-w-[1440px] mx-auto">
+      <h1 className="text-center text-5xl mb-[60px] font-bold text-[#AA1F2E]">
         Product Range
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-10">
@@ -56,15 +58,15 @@ const ProductRange = () => {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ objectFit: "cover" }}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-red-800 via-red-600 to-red-100 opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#AA1F2E] to-red-0 opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
               <div className="relative z-10 mt-auto overflow-hidden">
                 <div className="px-8 py-4 transform translate-y-[calc(100%-4rem)] group-hover:translate-y-0 transition-transform duration-500">
-                  <h1 className="font-bold text-xl mb-2 text-white">
+                  <h1 className="font-bold text-2xl mb-2 text-white">
                     {item.title}
                   </h1>
 
                   <div className="overflow-hidden">
-                    <p className="text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                    <p className="text-white text-base font-normal transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                       {item.description}
                     </p>
                   </div>
@@ -75,6 +77,8 @@ const ProductRange = () => {
         })}
       </div>
     </div>
+    </div>
+ 
   );
 };
 

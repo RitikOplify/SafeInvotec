@@ -2,11 +2,12 @@ import React from "react";
 
 const IndustrialSolutionsOverview = () => {
   return (
-    <div className="w-full h-3/5 flex-col md:flex-row flex md:px-6 lg:px-16 py-5">
+    <div>
+ <div className="max-w-[1440px] h-3/5 flex-col md:flex-row flex gap-20 md:gap-0 pt-[120px] pb-[100px] mx-auto px-5 sm:px-10 items-center">
       <div className="h-full md:w-1/2 w-full flex items-center">
         <img src="/MapImage/Map.png" className=" h-full w-full object-cover"/>
       </div>
-      <div className="md:w-1/2 w-full mt-4 md:pt-0 flex items-center flex-col justify-center px-5 md:px-6 lg:px-14">
+      <div className="md:w-1/2 text-[#54565A] text-base w-full md:pt-0 flex items-center flex-col justify-center px-5 md:px-6 lg:px-14">
         <p>
           Safe Invotec is your leading source for advanced joining and cutting
           solutions, including brazing, welding, and soldering materials. Our
@@ -21,6 +22,8 @@ const IndustrialSolutionsOverview = () => {
         </p>
       </div>
     </div>
+    </div>
+   
   );
 };
 

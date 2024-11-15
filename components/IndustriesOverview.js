@@ -51,12 +51,13 @@ const IndustriesOverview = () => {
   );
 
   return (
-    <div className="md:px-16 px-10 py-5 w-full">
-      <h1 className="text-center text-4xl font-extrabold text-[#AA1F2E]">
+    <div>
+   <div className="px-5 sm:px-10 pb-[120px] max-w-[1440px] mx-auto ">
+      <h1 className="text-center text-5xl font-bold mb-[30px] text-[#AA1F2E]">
         Integration Across Industries
       </h1>
       <div className=" flex justify-center pt-10">
-        <p className=" lg:text-center lg:w-3/5 sm:text-lg text-left">
+        <p className=" lg:text-center lg:w-3/5 mb-[40px] text-[#54565A] text-base text-left">
           In addition to our premium products, we provide value-added services
           such as cost reduction strategies, technical support for new
           applications, and quality improvement initiatives, ensuring that you
@@ -84,10 +85,10 @@ const IndustriesOverview = () => {
               </h1>
               <div className="pt-5 bg-white px-5 bg-opacity-80 w-[70%] relative translate-y-full group-hover:translate-y-0 transition-all duration-500">
                 <div className="overflow-hidden">
-                  <h2 className="font-bold text-xl mb-2 text-black">
+                  <h2 className=" text-xl mb-2 text-[#AA1F2E] font-extrabold">
                     {item.title}
                   </h2>
-                  <div className="mb-6">{item.description}</div>
+                  <div className="mb-6 text-sm text-[#54565A]">{item.description}</div>
                 </div>
               </div>
             </div>
@@ -95,6 +96,8 @@ const IndustriesOverview = () => {
         })}
       </div>
     </div>
+    </div>
+ 
   );
 };
 

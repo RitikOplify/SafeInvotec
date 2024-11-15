@@ -2,8 +2,8 @@ import React from "react";
 
 const TurnkeySolutions = () => {
   return (
-    <div className="py-5 w-full">
-      <h1 className="text-center text-4xl mb-5 font-extrabold text-[#AA1F2E]">
+    <div className="py-5 pb-[120px] w-full">
+      <h1 className="text-center text-5xl mb-5 font-extrabold text-[#AA1F2E]">
         Turnkey Solutions
       </h1>
       <div className=" w-full">
@@ -15,10 +15,10 @@ const TurnkeySolutions = () => {
           />
         </div>
         <div>
-          <h1 className="text-center sm:text-3xl text-lg mb-4 font-bold">
+          <h1 className="text-center sm:text-3xl text-lg text-[#000] text-[28px] mb-4 font-bold">
             GAS DISTRIBUTION SYSTEM
           </h1>
-          <p className=" mt-1 font-bold text-gray-600 text-center">
+          <p className=" mt-1 font-bold text-[#000] text-base text-center">
             Learn More <i className="ri-arrow-right-s-line"></i>
           </p>
         </div>
