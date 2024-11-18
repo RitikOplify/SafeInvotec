@@ -1,20 +1,18 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import 'remixicon/fonts/remixicon.css'
+import "remixicon/fonts/remixicon.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
-  title: "Safe Invotec - Industry Leaders in Industrial and Specialty Gas Equipments",
+  title:
+    "Safe Invotec - Industry Leaders in Industrial and Specialty Gas Equipments",
   description: "Industry Leaders in Specialty and Industrial Gas Equipments",
 };
 
@@ -22,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.className} antialiased`}
         suppressHydrationWarning={true}
       >
         {children}

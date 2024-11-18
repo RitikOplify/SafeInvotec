@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -23,7 +24,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h1 className=" text-[32px] mb-4 font-extrabold text-[#AA1F2E]">
+            <h1 className=" text-[32px] mb-4 font-bold text-[#AA1F2E]">
               Would you like to start a project with us?
             </h1>
             <div className=" flex mt-3 flex-wrap gap-2 sm:gap-4 items-start sm:items-center">
@@ -41,65 +42,95 @@ const Footer = () => {
         </div>
         <div className=" h-1 w-full bg-black mt-10 mb-[60px]"></div>
         <div className=" flex justify-between py-10 flex-wrap gap-10">
-          <div className=" flex flex-col gap-1 ">
+          <div className=" flex flex-col">
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               CONTACT
             </h1>
-            <p>
+           <div className=" flex flex-col gap-4">
+           <p>
               {" "}
               <span className=" font-semibold text-base">Call Us: </span>{" "}
               <span className="text-[#AA1F2E] font-semibold text-base">
                 +91 9769035683
               </span>
             </p>
-            <p>
-              {" "}
+            <Link href={""}>
+              
               <span className=" font-semibold text-base">Email: </span>{" "}
               <span className="text-[#AA1F2E] font-semibold text-base">
                 info@safeinvotec.com
               </span>
-            </p>
+            </Link>
+            </div>
           </div>
 
-          <div className=" flex flex-col gap-1 ">
+          <div className=" flex flex-col ">
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               INFORMATION
             </h1>
-            <p className="text-[#54565A] hover:border-b text-base font-semibold w-fit text-[54565A]  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+           <div className=" flex flex-col gap-4 font-medium">
+           <Link
+              href={""}
+              className="text-[#54565A] hover:border-b text-base w-fit text-[54565A]  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+            >
               About Us
-            </p>
-            <p className="text-[#54565A] hover:border-b text-base font-semibold w-fit text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            </Link>
+            <Link
+              href={""}
+              className="text-[#54565A] hover:border-b text-base font-semibold w-fit hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+            >
               Contact Us
-            </p>
+            </Link>
+           </div>
           </div>
 
-          <div className=" flex flex-col gap-1 ">
+          <div className=" flex flex-col font-medium ">
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               PRODUCTS
             </h1>
-            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
-              Industries Gas Equipment
-            </p>
-            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
-              Speciality Gas Equipment
-            </p>
-            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
-              Ultra High Purity Gas Equipment
-            </p>
-            <p className=" text-[#54565A] hover:border-b w-fit font-semibold text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
-              Brazing Filler & Fluxes
-            </p>
-            <p className=" text-[#54565A] hover:border-b font-semibold w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
-              Gas Flux
-            </p>
+            <div className=" flex flex-col gap-4">
+              <Link
+                href={""}
+                className=" text-[#54565A] hover:border-b w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              >
+                Industries Gas Equipment
+              </Link>
+              <Link
+                href={" "}
+                className=" text-[#54565A] hover:border-b w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              >
+                Speciality Gas Equipment
+              </Link>
+              <Link
+                href={""}
+                className=" text-[#54565A] hover:border-b w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              >
+                Ultra High Purity Gas Equipment
+              </Link>
+              <Link
+                href={""}
+                className=" text-[#54565A] hover:border-b w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              >
+                Brazing Filler & Fluxes
+              </Link>
+              <Link
+                href={""}
+                className=" text-[#54565A] hover:border-b w-fit text-base text-[54565A] hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              >
+                Gas Flux
+              </Link>
+            </div>
           </div>
-          <div className=" flex flex-col gap-1 ">
+          <div className=" flex flex-col ">
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               TURNKEY SOLUTIONS
             </h1>
-            <p className=" text-[#54565A] hover:border-b font-semibold text-base text-[54565A] w-fit hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300">
+            <Link
+              href={""}
+              className=" text-[#54565A] hover:border-b font-medium text-base text-[54565A] w-fit hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+            >
               Gas Distribution System
-            </p>
+            </Link>
           </div>
         </div>
       </div>
