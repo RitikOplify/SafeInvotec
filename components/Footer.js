@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,9 +6,17 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 const Footer = () => {
+  
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="border-t-2">
-      {/* <div > */}
       <div className="px-5 sm:px-10 pb-[60px] pt-[70px] max-w-[1440px] mx-auto">
         {" "}
         <div className="flex flex-col md:flex-row gap-10 md:gap-48 items-start md:items-center">
@@ -137,14 +146,12 @@ const Footer = () => {
           </div>
           <div className=" my-auto flex gap-8 flex-col items-center">
             <IoLogoWhatsapp className="text-[#7BE57D] text-5xl" />
-            <div className=" h-9 w-9 flex items-center justify-center bg-[#AA1F2E]">
+            <div className=" h-9 w-9 flex items-center justify-center cursor-pointer bg-[#AA1F2E]" onClick={handleScrollToTop}>
               <IoIosArrowUp className=" text-white text-3xl" />
             </div>
           </div>
         </div>
       </div>
-
-      {/* </div> */}
 
       <div className=" bg-[#0E1035] ">
         <div className="   text-white text-base font-semibold h-auto sm:h-[60px] flex justify-between flex-wrap gap-5 py-5 sm:py-0 px-5 sm:px-10 max-w-[1440px] mx-auto items-center">
