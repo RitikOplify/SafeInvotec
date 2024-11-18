@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,8 +6,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 const Footer = () => {
-  
-
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -146,7 +144,10 @@ const Footer = () => {
           </div>
           <div className=" my-auto flex gap-8 flex-col items-center">
             <IoLogoWhatsapp className="text-[#7BE57D] text-5xl" />
-            <div className=" h-9 w-9 flex items-center justify-center cursor-pointer bg-[#AA1F2E]" onClick={handleScrollToTop}>
+            <div
+              className=" h-9 w-9 flex items-center justify-center cursor-pointer bg-[#AA1F2E]"
+              onClick={handleScrollToTop}
+            >
               <IoIosArrowUp className=" text-white text-3xl" />
             </div>
           </div>
@@ -154,7 +155,7 @@ const Footer = () => {
       </div>
 
       <div className=" bg-[#0E1035] ">
-        <div className="   text-white text-base font-semibold h-auto sm:h-[60px] flex justify-between flex-wrap gap-5 py-5 sm:py-0 px-5 sm:px-10 max-w-[1440px] mx-auto items-center">
+        <div className="   text-white text-base font-medium h-auto sm:h-[60px] flex justify-between flex-wrap gap-5 py-5 sm:py-0 px-5 sm:px-10 max-w-[1440px] mx-auto items-center">
           <p>Copyright 2024 © Safe Invotec JCS LLP</p>
           <p> Privacy Policy | Terms & Condition</p>
         </div>
