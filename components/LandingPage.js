@@ -60,31 +60,31 @@ const LandingPage = () => {
     };
   }, [activeSlide, slides.length]);
 
-  // useEffect(() => {
-  //   let interval;
+  useEffect(() => {
+    let interval;
 
-  //   const startSlider = () => {
-  //     interval = setInterval(() => {
-  //       setActiveSlide((prevSlide) => prevSlide + 1);
-  //     }, 6000);
-  //   };
+    const startSlider = () => {
+      interval = setInterval(() => {
+        setActiveSlide((prevSlide) => prevSlide + 1);
+      }, 6000);
+    };
 
-  //   const handleVisibilityChange = () => {
-  //     if (document.hidden) {
-  //       clearInterval(interval);
-  //     } else {
-  //       startSlider();
-  //     }
-  //   };
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        clearInterval(interval);
+      } else {
+        startSlider();
+      }
+    };
 
-  //   document.addEventListener("visibilitychange", handleVisibilityChange);
-  //   startSlider();
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    startSlider();
 
-  //   return () => {
-  //     clearInterval(interval);
-  //     document.removeEventListener("visibilitychange", handleVisibilityChange);
-  //   };
-  // }, []);
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   return (
     <div className="w-full overflow-hidden relative">
