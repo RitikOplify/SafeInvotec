@@ -108,7 +108,7 @@ const LandingPage = () => {
               width={1440}
               height={100}
             />
-            <div className="absolute top-[50%] transform -translate-y-1/2 flex items-center h-full w-[47%] z-10 bg-opacity-50 p-5 rounded-lg">
+            <div className="absolute top-[50%] transform -translate-y-1/2 flex items-center h-full w-[47%] z-10 bg-opacity-50 p-5 rounded-lg typewriter">
               <div>
                 <h1
                   key={activeSlide}
