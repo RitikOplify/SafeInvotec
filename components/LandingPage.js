@@ -102,12 +102,14 @@ const LandingPage = () => {
             key={index}
             className="slide h-fit w-full flex-shrink-0 flex justify-start items-center relative overflow-hidden"
           >
-            <Image
+            {/* <Image
               src={slide.images}
               alt={slide.title}
               width={1440}
               height={100}
-            />
+            /> */}
+
+            <img src={slide.images} alt={slide.title} className=" w-full" />
             <div className="absolute top-[50%] transform -translate-y-1/2 flex items-center h-full w-[47%] z-10 bg-opacity-50 p-5 rounded-lg typewriter">
               <div>
                 <h1
