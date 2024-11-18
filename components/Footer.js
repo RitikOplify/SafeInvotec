@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { IoIosArrowUp } from "react-icons/io";
 const Footer = () => {
   return (
     <div className="border-t-2">
@@ -46,21 +48,22 @@ const Footer = () => {
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               CONTACT
             </h1>
-           <div className=" flex flex-col gap-4">
-           <p>
-              {" "}
-              <span className=" font-semibold text-base">Call Us: </span>{" "}
-              <span className="text-[#AA1F2E] font-semibold text-base">
-                +91 9769035683
-              </span>
-            </p>
-            <Link href={""}>
-              
-              <span className=" font-semibold text-base">Email: </span>{" "}
-              <span className="text-[#AA1F2E] font-semibold text-base">
-                info@safeinvotec.com
-              </span>
-            </Link>
+            <div className=" flex flex-col gap-4">
+              <p>
+                <span className=" font-semibold text-base">Call Us: </span>{" "}
+                <span className="text-[#AA1F2E] font-semibold text-base">
+                  +91 9769035683
+                </span>
+              </p>
+              <Link href={""}>
+                <span className=" font-semibold text-base">Email: </span>{" "}
+                <span className="text-[#AA1F2E] font-semibold text-base">
+                  info@safeinvotec.com
+                </span>
+              </Link>
+              <div className="bg-[#172B4D] text-white w-10 h-10 text-xl flex items-center justify-center">
+                <FaLinkedinIn />
+              </div>
             </div>
           </div>
 
@@ -68,20 +71,20 @@ const Footer = () => {
             <h1 className=" text-[#AA1F2E] font-extrabold text-xl mb-5">
               INFORMATION
             </h1>
-           <div className=" flex flex-col gap-4 font-medium">
-           <Link
-              href={""}
-              className="text-[#54565A] hover:border-b text-base w-fit text-[54565A]  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-            >
-              About Us
-            </Link>
-            <Link
-              href={""}
-              className="text-[#54565A] hover:border-b text-base font-semibold w-fit hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-            >
-              Contact Us
-            </Link>
-           </div>
+            <div className=" flex flex-col gap-4 font-medium">
+              <Link
+                href={""}
+                className="text-[#54565A] hover:border-b text-base w-fit text-[54565A]  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              >
+                About Us
+              </Link>
+              <Link
+                href={""}
+                className="text-[#54565A] hover:border-b text-base font-semibold w-fit hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
 
           <div className=" flex flex-col font-medium ">
@@ -131,6 +134,12 @@ const Footer = () => {
             >
               Gas Distribution System
             </Link>
+          </div>
+          <div className=" my-auto flex gap-8 flex-col items-center">
+            <IoLogoWhatsapp className="text-[#7BE57D] text-5xl" />
+            <div className=" h-9 w-9 flex items-center justify-center bg-[#AA1F2E]">
+              <IoIosArrowUp className=" text-white text-3xl" />
+            </div>
           </div>
         </div>
       </div>

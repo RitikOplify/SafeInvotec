@@ -31,7 +31,8 @@ const ProductRange = () => {
         image: "/Product/soldering.jpg",
         title: "SOLDERING",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sem est, rhoncus pulvinar mi condimentum vel.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sem est, rhoncus pulvinar mi condimentum vel.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sem est, rhoncus pulvinar mi condimentum vel.",
+         
         link: "/",
       },
     ],
@@ -69,7 +70,7 @@ const ProductRange = () => {
                 </Link>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#AA1F2E] to-red-0 opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
                 <div className="relative z-10 mt-auto overflow-hidden">
-                  <div className="px-8 py-4 transform translate-y-[calc(100%-4rem)] group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="pl-8 py-4 transform translate-y-[calc(100%-4rem)] group-hover:translate-y-0 transition-transform duration-500">
                     <h1 className="font-bold text-2xl mb-2 text-white">
                       {item.title}
                     </h1>
