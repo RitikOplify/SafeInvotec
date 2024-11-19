@@ -13,9 +13,8 @@ const Nav = () => {
     <nav>
       <div className=" max-w-[1440px] flex md:hidden py-6 px-5 sm:px-10 justify-between items-center relative">
         <i
-          className={`${
-            isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
-          }`}
+          className={`${isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
+            }`}
           onClick={menuOpen}
         ></i>
         <Image

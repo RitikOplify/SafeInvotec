@@ -31,8 +31,8 @@ const ProductRange = () => {
         image: "/Product/soldering.jpg",
         title: "SOLDERING",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sem est, rhoncus pulvinar mi condimentum vel.",
-         
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sem est, rhoncus pulvinar mi condimentum vel.",
+
         link: "/",
       },
     ],

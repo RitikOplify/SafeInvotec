@@ -1,144 +1,106 @@
 "use client";
-
-import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+import React, { useState, useEffect } from "react";
 
 const LandingPage = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [currentImage, setCurrentImage] = useState(0);
+
   const slides = [
     {
       title: "Innovative Brazing Solutions",
       subtitle: "Precision and Reliability",
       description:
         "Safe Invotec: Delivering Advanced Brazing Technologies for Unmatched Performance and Durability",
-      images: "/HomePageBanner/BrazingSolutionSlider.jpg",
+      image: "/HomePageBanner/Brazingsolutionsliderimage.jpg",
     },
     {
       title: "Efficient and Reliable",
       subtitle: "Gas Savers",
       description:
         "Reduce gas usage and maximize efficiency with our trusted solutions",
-      images: "/HomePageBanner/gassaverslider.jpg",
+      image: "/HomePageBanner/gassaversliderimage.png",
     },
     {
       title: "Precise and Durable",
       subtitle: "Soldering Solutions",
       description:
         "Achieve flawless connections with our reliable soldering expertise",
-      images: "/HomePageBanner/solderingsolutionslider.jpg",
+      image: "/HomePageBanner/solderingsolutionsliderimage.png",
     },
     {
       title: "Strong and Accurate",
       subtitle: "Welding Solutions",
       description:
         "Delivering dependable welds with unmatched precision for every application",
-      images: "/HomePageBanner/weldingsolutionslider.jpg",
+      image: "/HomePageBanner/Weldingsolutionsliderimage.jpg",
     },
   ];
-  const sliderRef = useRef(null);
 
   useEffect(() => {
-    const handleTransitionEnd = () => {
-      if (activeSlide === slides.length) {
-        setIsTransitioning(false);
-        setActiveSlide(0);
-        sliderRef.current.style.transition = "none";
-        sliderRef.current.style.transform = `translateX(0%)`;
-        setTimeout(() => {
-          setIsTransitioning(true);
-          sliderRef.current.style.transition = "";
-        }, 0);
-      }
-    };
-
-    const slider = sliderRef.current;
-    slider.addEventListener("transitionend", handleTransitionEnd);
-
-    return () => {
-      slider.removeEventListener("transitionend", handleTransitionEnd);
-    };
-  }, [activeSlide, slides.length]);
-
-  useEffect(() => {
-    let interval;
-
-    const startSlider = () => {
-      interval = setInterval(() => {
-        setActiveSlide((prevSlide) => prevSlide + 1);
-      }, 6000);
-    };
-
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        clearInterval(interval);
-      } else {
-        startSlider();
-      }
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-    startSlider();
-
-    return () => {
-      clearInterval(interval);
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % slides.length);
+    }, 5500);
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full overflow-hidden relative">
-      <div
-        ref={sliderRef}
-        className={`slider-container relative w-full flex ${
-          isTransitioning
-            ? "transition-transform duration-1000 ease-in-out"
-            : ""
-        }`}
-        style={{ transform: `translateX(-${activeSlide * 100}%)` }}
-      >
-        {[...slides, slides[0]].map((slide, index) => (
-          <div
-            key={index}
-            className="slide h-fit w-full flex-shrink-0 flex justify-start items-center relative overflow-hidden"
+   <div 
+   style={{
+    backgroundImage: `url(/HomePageBanner/homepageplainbackground.jpg)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+   >
+    <div
+   
+      className="max-w-[1440px] mx-auto overflow-hidden md:flex-row flex flex-col items-center"
+    >
+      <div className="md:w-[47%] w-full z-10 bg-opacity-50 p-5 rounded-lg typewriter">
+        <div>
+          <h1
+            key={currentImage}
+            className="text-[#AA1F2E] lg:text-[34px] text-2xl w-fit font-bold overflow-hidden whitespace-nowrap animate-typing h-[45px]"
           >
-            {/* <Image
-              src={slide.images}
-              alt={slide.title}
-              width={1440}
-              height={100}
-            /> */}
-
-            <img src={slide.images} alt={slide.title} className=" w-full" />
-            <div className="absolute top-[50%] transform -translate-y-1/2 flex items-center h-full w-[47%] z-10 bg-opacity-50 p-5 rounded-lg typewriter">
-              <div>
-                <h1
-                  key={activeSlide}
-                  className="text-[#AA1F2E] lg:text-[34px] md:text-2xl sm:text-xl text-xs w-fit font-bold overflow-hidden whitespace-nowrap animate-typing"
-                >
-                  {slide.title}
-                </h1>
-                <h2 className="text-black lg:py-1 lg:text-4xl md:text-2xl sm:text-xl text-xs lg:text-[30px] font-extrabold">
-                  {slide.subtitle}
-                </h2>
-                <p className="text-xs lg:xl: sm:text-lg my-1">
-                  {slide.description}
-                </p>
-                <div className=" flex lg:mt-5 flex-col md:flex-row md:mt-4 items-start gap-1 sm:gap-3 sm:mt-2">
-                  <div className="bg-[#AA1F2E] font-bold md:py-3 md:px-3 text-white sm:py-2 py-1 px-2 text-xs rounded-lg">
-                    VIEW OUR PRODUCTS
-                  </div>
-                  <div className="bg-black font-bold text-xs md:py-3 md:px-3 text-white sm:py-2 py-1 px-2 rounded-lg">
-                    LEARN MORE ABOUT
-                  </div>
-                </div>
-              </div>
+            {slides[currentImage].title}
+          </h1>
+          <h2 className="text-black lg:py-1 text-2xl lg:text-[30px] font-extrabold">
+            {slides[currentImage].subtitle}
+          </h2>
+          <p className="lg:xl: sm:text-lg my-1">
+            {slides[currentImage].description}
+          </p>
+          <div className="flex lg:mt-5 mt-4 items-start gap-4 flex-wrap">
+            <div className="bg-[#AA1F2E] font-bold md:py-3 md:px-3 text-white py-2 px-2 text-xs rounded-lg">
+              VIEW OUR PRODUCTS
             </div>
-            <div />
+            <div className="bg-black font-bold text-xs md:py-3 md:px-3 text-white py-2 px-2 rounded-lg">
+              LEARN MORE ABOUT
+            </div>
           </div>
-        ))}
+        </div>
+      </div>
+
+      <div className="md:w-[53%] w-full h-full flex">
+
+        <div>
+          {slides.map(
+            (slide, index) =>
+              index === currentImage && (
+                <div
+                  key={index}
+                  className="flex items-center p-5 right-0 slide-in"
+                >
+                  <img
+                    src={slide.image}
+                    alt={slide.image || "Slide image"}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              )
+          )}
+        </div>
       </div>
     </div>
+   </div>
   );
 };
 
