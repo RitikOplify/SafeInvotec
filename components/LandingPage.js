@@ -49,7 +49,6 @@ const LandingPage = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className=" md:max-h-[75vh]"
     >
       <div className="max-w-[1440px] mx-auto overflow-hidden md:flex-row flex flex-col items-center">
         <div className="md:w-[47%] w-full z-10 bg-opacity-50 p-5 rounded-lg typewriter">
