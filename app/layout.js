@@ -1,8 +1,9 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
 
 import { Poppins } from "next/font/google";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],

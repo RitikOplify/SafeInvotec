@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h1 className=" text-[32px] mb-4 font-bold text-[#AA1F2E]">
+            <h1 className=" text-[32px] mb-4 font-extrabold text-[#AA1F2E]">
               Would you like to start a project with us?
             </h1>
             <div className=" flex mt-3 flex-wrap gap-2 sm:gap-4 items-start sm:items-center">
