@@ -38,7 +38,7 @@ const Nav = () => {
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={""}
+              href={"/certifications"}
             >
               CERTIFICATIONS
             </Link>
@@ -78,7 +78,7 @@ const Nav = () => {
           <div className="h-[54px] items-center font-bold text-[14px] text-white flex justify-end gap-5 py-4 pr-11 max-w-[1440px] mx-auto">
             <Link href={""}>ABOUT US</Link>
             <span>/</span>
-            <Link href={""}>CERTIFICATIONS</Link>
+            <Link href={"/certifications"}>CERTIFICATIONS</Link>
             <span>/</span>
 
             <Link href={""}>CAREERS</Link>
