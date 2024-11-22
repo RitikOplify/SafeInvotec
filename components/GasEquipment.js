@@ -7,7 +7,7 @@ const GasEquipment = () => {
         src="/GasEquipment/Industrial Gas Equipment sliders.jpg"
         className=" w-full object-cover"
       />
-      <div className=" pb-[100px] max-w-[1440px] mx-auto">
+      <div className=" max-w-[1440px] mx-auto">
         <div className=" px-5 sm:px-10 py-[60px] flex gap-10 flex-col md:flex-row">
           <div className="lg:h-[480px] lg:min-w-[480px] sm:h-[430px] h-[350px] sm:min-w-[400px] bg-[#FCFCFC] gas-b flex items-center justify-center">
             <img
