@@ -88,7 +88,7 @@ const Nav = () => {
           </div>
         </div>
 
-        <div className="max-w-[1440px] mx-auto flex font-semibold text-[16px] justify-between items-center py-6 px-10">
+        <div className="max-w-[1440px] mx-auto flex font-semibold text-[16px] justify-between items-center py-6 shadow-sm px-10">
           <Image
             width={200}
             height={10}

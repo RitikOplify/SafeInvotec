@@ -77,13 +77,21 @@ const BrazzingDetails = () => {
 
             <div className=" flex flex-col gap-2">
               <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
-                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">Solidus</h1>
-                <h2 className=" text-base opacity-70 w-2/5 sm:w-auto">1325oF (718°C)</h2>
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">
+                  Solidus
+                </h1>
+                <h2 className=" text-base opacity-70 w-2/5 sm:w-auto">
+                  1325oF (718°C)
+                </h2>
               </div>
 
               <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
-                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">Liquidus</h1>
-                <h2 className=" text-base opacity-70 w-2/5 sm:w-auto">1575°F (857°C)</h2>
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">
+                  Liquidus
+                </h1>
+                <h2 className=" text-base opacity-70 w-2/5 sm:w-auto">
+                  1575°F (857°C)
+                </h2>
               </div>
 
               <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
@@ -99,12 +107,18 @@ const BrazzingDetails = () => {
                 <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">
                   Electrical Conductivity
                 </h1>
-                <h2 className="text-base opacity-70  w-2/5 sm:w-fit">49.3 (%IACS)</h2>
+                <h2 className="text-base opacity-70  w-2/5 sm:w-fit">
+                  49.3 (%IACS)
+                </h2>
               </div>
 
               <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
-                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">Density</h1>
-                <h2 className="text-base opacity-70 w-2/5 sm:w-auto">5.05 (T.O./cu.in.).</h2>
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">
+                  Density
+                </h1>
+                <h2 className="text-base opacity-70 w-2/5 sm:w-auto">
+                  5.05 (T.O./cu.in.).
+                </h2>
               </div>
             </div>
           </div>
