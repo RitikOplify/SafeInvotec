@@ -61,7 +61,7 @@ const BrazzingDetails = () => {
             <h1 className="text-[#AA1F2E] text-[36px] font-normal md:w-[190px] w-full text-center md:text-right ">
               Properties
             </h1>
-            <p className=" w-full md:w-3/4 pr-5 text-[#000] opacity-80 text-base font-normal">
+            <p className=" w-full md:w-3/4 sm:pr-5 text-[#000] opacity-80 text-base font-normal">
               A cadmium-free braze alloy with a fairly long melting range. The
               reduced zinc content makes it suitable for furnace brazing
               applications, often used to braze stainless steel. When oxy-fuel
@@ -70,49 +70,41 @@ const BrazzingDetails = () => {
             </p>
           </div>
 
-          <div className=" flex flex-col md:flex-row gap-10 items-start py-[60px]  ">
+          <div className=" flex flex-col md:flex-row gap-10 items-start py-[60px]">
             <h1 className="text-[#AA1F2E] text-[36px] font-normal md:w-[190px] w-full text-center md:text-right ">
               Specs
             </h1>
 
             <div className=" flex flex-col gap-2">
-              <div className="text-[#000] flex gap-10">
-                <h1 className="opacity-80 font-medium w-[180px]">Solidus</h1>
-                <h2 className=" text-base opacity-70">
-                  1325oF (718°C)
-                </h2>
+              <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">Solidus</h1>
+                <h2 className=" text-base opacity-70 w-2/5 sm:w-auto">1325oF (718°C)</h2>
               </div>
 
-              <div className="text-[#000] flex gap-10">
-                <h1 className="opacity-80 font-medium w-[180px]">Liquidus</h1>
-                <h2 className=" text-base opacity-70">
-                  1575°F (857°C)
-                </h2>
+              <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">Liquidus</h1>
+                <h2 className=" text-base opacity-70 w-2/5 sm:w-auto">1575°F (857°C)</h2>
               </div>
 
-              <div className="text-[#000] flex gap-10">
-                <h1 className="opacity-80 font-medium w-[180px]">
+              <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">
                   Brazing Range
                 </h1>
-                <h2 className=" text-base opacity-70 w-2/5 sm:w-fit">
+                <h2 className=" text-base opacity-70 w-2/5 sm:w-auto">
                   1575°F- 1775°F (860°C -970°C)
                 </h2>
               </div>
 
-              <div className="text-[#000] flex gap-10">
-                <h1 className="opacity-80 font-medium w-[180px]">
+              <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">
                   Electrical Conductivity
                 </h1>
-                <h2 className="text-base opacity-70">
-                  49.3 (%IACS)
-                </h2>
+                <h2 className="text-base opacity-70  w-2/5 sm:w-fit">49.3 (%IACS)</h2>
               </div>
 
-              <div className="text-[#000] flex gap-10">
-                <h1 className="opacity-80 font-medium w-[180px]">Density</h1>
-                <h2 className="text-base opacity-70">
-                  5.05 (T.O./cu.in.).
-                </h2>
+              <div className="text-[#000] flex gap-5 sm:gap-10 justify-between sm:justify-start">
+                <h1 className="opacity-80 font-medium w-3/5 sm:w-[180px]">Density</h1>
+                <h2 className="text-base opacity-70 w-2/5 sm:w-auto">5.05 (T.O./cu.in.).</h2>
               </div>
             </div>
           </div>
@@ -121,7 +113,7 @@ const BrazzingDetails = () => {
             <h1 className="text-[#AA1F2E] text-[36px] font-normal md:w-[190px] w-full text-center md:text-right ">
               Disclaimer
             </h1>
-            <p className="md:w-3/4 w-full pr-5 text-[#000] opacity-80 text-base font-normal">
+            <p className="md:w-3/4 w-full sm:pr-5 text-[#000] opacity-80 text-base font-normal">
               Any suggestion of product applications or results is given without
               representation or warranty, either expressed or implied. Without
               exception or limitation, there are no warranties of
