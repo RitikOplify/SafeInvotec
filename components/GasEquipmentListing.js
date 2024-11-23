@@ -15,25 +15,25 @@ const GasEquipmentListing = () => {
           </h1>
           <div className="grid gap-y-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div className="relative">
-              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-base sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
+              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-sm sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
                 Pressure Regulators
               </h1>
               <span className=" absolute top-1/2 right-0 w-[2px] h-1/2 bg-gray-200 transform -translate-y-1/2"></span>
             </div>
             <div className="relative">
-              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-base sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
+              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-sm sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
                 Pressure Regulators
               </h1>
               <span className=" absolute top-1/2 right-0 w-[2px] h-1/2 bg-gray-200 transform -translate-y-1/2"></span>
             </div>
             <div className="relative">
-              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-base sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
+              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-sm sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
                 Pressure Regulators
               </h1>
               <span className=" absolute top-1/2 right-0 w-[2px] h-1/2 bg-gray-200 transform -translate-y-1/2"></span>
             </div>
             <div className="relative">
-              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-base sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
+              <h1 className="text-[#000] cursor-pointer hover:opacity-100 opacity-60 text-sm sm:text-lg hover:border-b-4 hover:border-b-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300 font-mediumn text-center">
                 Pressure Regulators
               </h1>
               <span className=" absolute top-1/2 right-0 w-[2px] h-1/2 bg-gray-200 transform -translate-y-1/2"></span>
