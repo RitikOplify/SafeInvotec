@@ -12,7 +12,7 @@ const TurnkeySolutions = () => {
         <div className=" flex justify-center relative">
           <div className=" w-full h-10 bg-[#AA1F2E] absolute left-1/2  top-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
           <Image
-            className="z-10 pt-5 pb-10"
+            className="z-10 pt-5 pb-10 scale-90"
             src="/TurnkeySolutions/gasdistributionsystems.png"
             alt="Gas Distribution Systems"
             layout="intrinsic"
