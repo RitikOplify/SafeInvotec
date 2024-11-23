@@ -11,14 +11,14 @@ const ProductRange = () => {
         title: "GAS EQUIPMENTS",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sem est, rhoncus pulvinar mi condimentum vel.",
-        link: "/",
+        link: "/gas-equipment",
       },
       {
         image: "Product/brazing.jpg",
         title: "BRAZING",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere sem est, rhoncus pulvinar mi condimentum vel.",
-        link: "/",
+        link: "/brazzing",
       },
       {
         image: "/Product/welding.jpg",
@@ -63,7 +63,7 @@ const ProductRange = () => {
                   style={{ objectFit: "cover" }}
                 />
                 <Link
-                  href={""}
+                  href={item.link}
                   className="z-30 h-12 w-12 bg-[#AA1F2E] grayscale group-hover:grayscale-0 transition-all duration-500 text-white absolute right-6 bottom-6 flex items-center justify-center text-4xl"
                 >
                   <IoIosArrowForward />

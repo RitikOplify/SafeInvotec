@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -136,8 +137,9 @@ const Brazzing = () => {
                   <td className="p-4 text-gray-700 text-base">
                     {item.application}
                   </td>
+
                   <td className="p-4 text-[#AA1F2E] text-base font-medium underline cursor-pointer">
-                    {item.details}
+                    <Link href={"/brazzing/wjcygw"}>{item.details}</Link>
                   </td>
                 </tr>
               ))}

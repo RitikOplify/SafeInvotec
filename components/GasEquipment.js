@@ -40,7 +40,6 @@ const GasEquipment = () => {
         />
         <div className="absolute top-0 -z-10 left-0 h-full w-full bg-gray-100 opacity-90"></div>
         <div className="max-w-[1440px] mx-auto py-[100px] pl-[30px] sm:pl-[60px] relative">
-          
           <h1 className="text-[#AA1F2E] text-[42px] font-normal pb-[30px]">
             Features
           </h1>

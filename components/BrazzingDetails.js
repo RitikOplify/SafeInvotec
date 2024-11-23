@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { PiFileArrowDown } from "react-icons/pi";
 
@@ -43,14 +44,18 @@ const BrazzingDetails = () => {
               </h3>
             </div>
 
-            <button className=" flex items-center gap-2 h-[54px] mt-10 bg-[#AA1F2E] text-[#fff] py-4 px-10 font-medium uppercase text-sm ">
+            <a
+              href={"/GasEquipment/gas-equipment-bg.jpg"}
+              download
+              className=" flex items-center gap-2 h-[54px] mt-10 bg-[#AA1F2E] text-[#fff] py-4 px-10 font-medium uppercase text-sm "
+            >
               <PiFileArrowDown className=" text-2xl" /> TECHNICAL SHEET
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
-      <div className=" relative">
+      <div className="relative">
         <img
           src="/GasEquipment/gas-equipment-bg.jpg"
           className=" absolute top-0 h-full w-full -z-10 left-0 object-cover"
