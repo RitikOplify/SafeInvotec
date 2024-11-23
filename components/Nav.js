@@ -16,13 +16,14 @@ const Nav = () => {
     <nav>
       <div className=" max-w-[1440px] flex md:hidden py-6 px-5 sm:px-10 justify-between shadow-sm items-center relative">
         <i
-          className={`${isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
-            }`}
+          className={`${
+            isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
+          }`}
           onClick={menuOpen}
         ></i>
-        <Link href={'/'}>
+        <Link href={"/"}>
           <Image
-            width={200}
+            width={180}
             height={10}
             alt="logo"
             className=" object-cover"
@@ -90,10 +91,9 @@ const Nav = () => {
         </div>
 
         <div className="max-w-[1440px] mx-auto flex font-semibold text-[16px] justify-between items-center py-6 shadow-sm px-10">
-          <Link href={'/'}>
-
+          <Link href={"/"}>
             <Image
-              width={200}
+              width={180}
               height={10}
               alt="logo"
               className=" object-cover"
@@ -115,7 +115,6 @@ const Nav = () => {
 
               {isOpenProduct && (
                 <div className="absolute flex flex-col text-left z-10 font-normal mt-2 text-gray-600 left-0 w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
-
                   <div
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                     onClick={() => (window.location.href = "")}
