@@ -1,5 +1,6 @@
 import React from "react";
 import { LiaDownloadSolid } from "react-icons/lia";
+import Image from 'next/image';
 
 const Certifications = () => {
   const data = [
@@ -58,11 +59,14 @@ const Certifications = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-y-[60px] gap-x-[30px]">
         {data.map((item, i) => (
           <div key={i}>
-            <div className="w-full h-56 bg-gray-200 py-10">
-              <img
+            <div className="w-full h-56 bg-gray-200 py-10 flex items-center justify-center">
+              <Image
                 src={item.image}
                 alt={item.heading}
-                className="w-full h-full object-contain mix-blend-multiply"
+                height={200}
+                width={200}
+                objectFit="contain"
+                className="mix-blend-multiply"
               />
             </div>
             <div className="flex justify-between items-center mt-6">

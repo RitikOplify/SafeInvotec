@@ -46,7 +46,7 @@ const LandingPage = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-[1440px] mx-auto px-5 sm:px-10 flex gap-10 md:gap-0 flex-col md:flex-row py-10">
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-10 flex gap-10 md:gap-0 flex-col-reverse md:flex-row py-10">
         <div className="w-full md:w-1/2 flex flex-col items-start justify-center gap-5">
           <h1 className="text-[#AA1F2E] text-2xl sm:text-3xl md:text-4xl font-bold">
             <Typewriter
@@ -98,10 +98,10 @@ const LandingPage = () => {
             {currentContent.desc}
           </p>
           <div className="flex items-center gap-5 flex-wrap">
-            <button className="bg-[#AA1F2E] text-white px-3 font-medium text-sm py-2 rounded-md">
+            <button className="bg-[#AA1F2E] text-white px-3 w-[220px] font-medium text-sm py-2 rounded-md">
               VIEW OUR PRODUCTS
             </button>
-            <button className="bg-black text-white px-3 py-2 font-medium text-sm rounded-md">
+            <button className="bg-black text-white w-[220px] px-3 py-2 font-medium text-sm rounded-md">
               LEARN MORE ABOUT
             </button>
           </div>

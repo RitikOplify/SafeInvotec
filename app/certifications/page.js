@@ -1,16 +1,12 @@
-import Certifications from '@/components/Certifications'
-import Footer from '@/components/Footer'
-import Nav from '@/components/Nav'
-import React from 'react'
+import Certifications from "@/components/Certifications";
+import React from "react";
 
 const Page = () => {
   return (
     <>
-    <Nav/>
-    <Certifications/>
-    <Footer/>
+      <Certifications />
     </>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

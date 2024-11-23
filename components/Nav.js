@@ -16,23 +16,24 @@ const Nav = () => {
     <nav>
       <div className=" max-w-[1440px] flex md:hidden py-6 px-5 sm:px-10 justify-between shadow-sm items-center relative">
         <i
-          className={`${
-            isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
-          }`}
+          className={`${isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
+            }`}
           onClick={menuOpen}
         ></i>
-        <Image
-          width={200}
-          height={10}
-          alt="logo"
-          className=" object-cover"
-          src="/Logo/SafeInvotecLogo.png"
-        />
+        <Link href={'/'}>
+          <Image
+            width={200}
+            height={10}
+            alt="logo"
+            className=" object-cover"
+            src="/Logo/SafeInvotecLogo.png"
+          />
+        </Link>
         {isOpen && (
           <div className="flex md:hidden flex-col items-start absolute top-[100%] left-0 z-10 w-full bg-white gap-3 p-5 border">
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={""}
+              href={"/"}
             >
               ABOUT US
             </Link>
@@ -44,13 +45,13 @@ const Nav = () => {
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={""}
+              href={"/"}
             >
               CAREERS
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={""}
+              href={"/"}
             >
               CONTACT US
             </Link>
@@ -62,7 +63,7 @@ const Nav = () => {
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={""}
+              href={"/"}
             >
               INDUSTRIES
             </Link>
@@ -76,26 +77,29 @@ const Nav = () => {
       <div className="hidden md:block">
         <div className=" bg-[#AA1F2E]">
           <div className="h-[54px] items-center font-bold text-[14px] text-white flex justify-end gap-5 py-4 pr-11 max-w-[1440px] mx-auto">
-            <Link href={""}>ABOUT US</Link>
+            <Link href={"/"}>ABOUT US</Link>
             <span>/</span>
             <Link href={"/certifications"}>CERTIFICATIONS</Link>
             <span>/</span>
 
-            <Link href={""}>CAREERS</Link>
+            <Link href={"/"}>CAREERS</Link>
             <span>/</span>
 
-            <Link href={""}>CONTACT US</Link>
+            <Link href={"/"}>CONTACT US</Link>
           </div>
         </div>
 
         <div className="max-w-[1440px] mx-auto flex font-semibold text-[16px] justify-between items-center py-6 shadow-sm px-10">
-          <Image
-            width={200}
-            height={10}
-            alt="logo"
-            className=" object-cover"
-            src="/Logo/SafeInvotecLogo.png"
-          />
+          <Link href={'/'}>
+
+            <Image
+              width={200}
+              height={10}
+              alt="logo"
+              className=" object-cover"
+              src="/Logo/SafeInvotecLogo.png"
+            />
+          </Link>
           <div className=" text-end flex gap-5 items-center ">
             <div className="relative">
               <div
@@ -110,7 +114,8 @@ const Nav = () => {
               </div>
 
               {isOpenProduct && (
-                <div className="absolute flex flex-col text-left z-10 px-3 font-normal mt-2 text-gray-600 left-0 w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
+                <div className="absolute flex flex-col text-left z-10 font-normal mt-2 text-gray-600 left-0 w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
+
                   <div
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                     onClick={() => (window.location.href = "")}

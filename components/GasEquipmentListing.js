@@ -1,12 +1,16 @@
 import Link from "next/link";
 import React from "react";
-import { PiFileArrowDown } from "react-icons/pi";
+import Image from "next/image";
 const GasEquipmentListing = () => {
   return (
     <div>
-      <img
+      <Image
         src="/GasEquipment/Industrial Gas Equipment sliders.jpg"
         className=" w-full object-cover"
+        alt="Industrial Gas Equipment"
+        layout="responsive"
+        width={1440}
+        height={600}
       />
       <div className=" max-w-[1440px] mx-auto">
         <div className=" px-5 sm:px-10 py-[80px]">
@@ -46,9 +50,13 @@ const GasEquipmentListing = () => {
               className=" border rounded-2xl p-[12px]"
             >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img
+                <Image
                   src="/GasEquipment/601-25-AC right_11zon.png"
                   className=" scale-75"
+                  alt="Model 601"
+                  layout="responsive"
+                  width={100}
+                  height={100}
                 />
               </div>
               <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
@@ -64,9 +72,13 @@ const GasEquipmentListing = () => {
               className=" border rounded-2xl p-[12px]"
             >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img
+                <Image
                   src="/GasEquipment/601-25-AC right_11zon.png"
                   className=" scale-75"
+                  alt="Model 601"
+                  layout="responsive"
+                  width={100}
+                  height={100}
                 />
               </div>
               <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
@@ -82,9 +94,13 @@ const GasEquipmentListing = () => {
               className=" border rounded-2xl p-[12px]"
             >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img
+                <Image
                   src="/GasEquipment/601-25-AC right_11zon.png"
                   className=" scale-75"
+                  alt="Model 601"
+                  layout="responsive"
+                  width={100}
+                  height={100}
                 />
               </div>
               <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
@@ -100,9 +116,13 @@ const GasEquipmentListing = () => {
               className=" border rounded-2xl p-[12px]"
             >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img
+                <Image
                   src="/GasEquipment/601-25-AC right_11zon.png"
                   className=" scale-75"
+                  alt="Model 601"
+                  layout="responsive"
+                  width={100}
+                  height={100}
                 />
               </div>
               <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
@@ -118,9 +138,13 @@ const GasEquipmentListing = () => {
               className=" border rounded-2xl p-[12px]"
             >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img
+                <Image
                   src="/GasEquipment/601-25-AC right_11zon.png"
                   className=" scale-75"
+                  alt="Model 601"
+                  layout="responsive"
+                  width={100}
+                  height={100}
                 />
               </div>
               <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">

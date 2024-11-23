@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import Image from "next/image";
 
 const data = [
   {
@@ -84,9 +85,13 @@ const data = [
 const Brazzing = () => {
   return (
     <div>
-      <img
+      <Image
         src="/Industries/industriesBanner/brazingsolutionssliders.jpg"
-        className=" w-full object-cover"
+        className="w-full object-cover"
+        alt="Brazing Solutions"
+        layout="responsive"
+        width={1440}
+        height={600}
       />
       <div className="px-5 sm:px-10 pb-[100px] max-w-[1440px] mx-auto">
         <div className="flex pt-[100px] justify-between items-center space-x-4">

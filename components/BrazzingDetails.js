@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { PiFileArrowDown } from "react-icons/pi";
+import Image from "next/image";
 
 const BrazzingDetails = () => {
   return (
@@ -8,8 +9,11 @@ const BrazzingDetails = () => {
       <div className=" max-w-[1440px] mx-auto">
         <div className=" px-5 sm:px-10 py-[60px] flex gap-10 flex-col md:flex-row">
           <div className="lg:h-[480px] lg:min-w-[480px] sm:h-[430px] h-[350px] sm:min-w-[400px] bg-[#FCFCFC] gas-b flex items-center justify-center">
-            <img
+            <Image
               src="/GasEquipment/601-25-AC right_11zon.png"
+              alt="Gas Equipment"
+              width={480}
+              height={480}
               className=" sm:h-[75%] sm:w-[75%] h-[85%] w-[85%] object-contain"
             />
           </div>
@@ -56,9 +60,11 @@ const BrazzingDetails = () => {
       </div>
 
       <div className="relative">
-        <img
+        <Image
           src="/GasEquipment/gas-equipment-bg.jpg"
-          className=" absolute top-0 h-full w-full -z-10 left-0 object-cover"
+          className="absolute top-0 h-full w-full -z-10 left-0 object-cover"
+          layout="fill"
+          alt="Background Image"
         />
         <div className="absolute top-0 -z-10 left-0 h-full w-full bg-gray-100 opacity-90"></div>
         <div className="max-w-[1440px] mx-auto py-[100px] px-5 md:pl-[60px] relative">

@@ -60,7 +60,6 @@ const Blogs = () => {
           </div>
         </div>
         <div className=" w-full flex justify-center">
-          {" "}
           <Link
             href={""}
             className="mt-10 text-base font-normal text-[#AA1F2E] border-b border-b-[#AA1F2E] w-fit"
