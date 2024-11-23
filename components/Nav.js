@@ -56,7 +56,7 @@ const Nav = () => {
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={""}
+              href={"/#product"}
             >
               PRODUCTS
             </Link>

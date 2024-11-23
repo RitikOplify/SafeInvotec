@@ -37,55 +37,99 @@ const GasEquipmentListing = () => {
                 Pressure Regulators
               </h1>
               <span className=" absolute top-1/2 right-0 w-[2px] h-1/2 bg-gray-200 transform -translate-y-1/2"></span>
-
             </div>
           </div>
 
           <div className=" pt-[40px] gap-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            <Link href={'/gas-equipment/wueyjgdc'} className=" border rounded-2xl p-[12px]">
+            <Link
+              href={"/gas-equipment/wueyjgdc"}
+              className=" border rounded-2xl p-[12px]"
+            >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img src="/GasEquipment/601-25-AC right_11zon.png" className=" scale-75" />
+                <img
+                  src="/GasEquipment/601-25-AC right_11zon.png"
+                  className=" scale-75"
+                />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">Model 601</h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">Compact Single Stage Cylinder Regulator</p>
+              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+                Model 601
+              </h1>
+              <p className="text-[#000] opacity-60 text-sm font-normal">
+                Compact Single Stage Cylinder Regulator
+              </p>
             </Link>
 
-            <Link href={'/gas-equipment/wueyjgdc'} className=" border rounded-2xl p-[12px]">
+            <Link
+              href={"/gas-equipment/wueyjgdc"}
+              className=" border rounded-2xl p-[12px]"
+            >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img src="/GasEquipment/601-25-AC right_11zon.png" className=" scale-75" />
+                <img
+                  src="/GasEquipment/601-25-AC right_11zon.png"
+                  className=" scale-75"
+                />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">Model 601</h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">Compact Single Stage Cylinder Regulator</p>
+              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+                Model 601
+              </h1>
+              <p className="text-[#000] opacity-60 text-sm font-normal">
+                Compact Single Stage Cylinder Regulator
+              </p>
             </Link>
 
-            <Link href={'/gas-equipment/wueyjgdc'} className=" border rounded-2xl p-[12px]">
+            <Link
+              href={"/gas-equipment/wueyjgdc"}
+              className=" border rounded-2xl p-[12px]"
+            >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img src="/GasEquipment/601-25-AC right_11zon.png" className=" scale-75" />
+                <img
+                  src="/GasEquipment/601-25-AC right_11zon.png"
+                  className=" scale-75"
+                />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">Model 601</h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">Compact Single Stage Cylinder Regulator</p>
+              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+                Model 601
+              </h1>
+              <p className="text-[#000] opacity-60 text-sm font-normal">
+                Compact Single Stage Cylinder Regulator
+              </p>
             </Link>
 
-            <Link href={'/gas-equipment/wueyjgdc'} className=" border rounded-2xl p-[12px]">
+            <Link
+              href={"/gas-equipment/wueyjgdc"}
+              className=" border rounded-2xl p-[12px]"
+            >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img src="/GasEquipment/601-25-AC right_11zon.png" className=" scale-75" />
+                <img
+                  src="/GasEquipment/601-25-AC right_11zon.png"
+                  className=" scale-75"
+                />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">Model 601</h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">Compact Single Stage Cylinder Regulator</p>
+              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+                Model 601
+              </h1>
+              <p className="text-[#000] opacity-60 text-sm font-normal">
+                Compact Single Stage Cylinder Regulator
+              </p>
             </Link>
 
-
-            <Link href={'/gas-equipment/wueyjgdc'} className=" border rounded-2xl p-[12px]">
+            <Link
+              href={"/gas-equipment/wueyjgdc"}
+              className=" border rounded-2xl p-[12px]"
+            >
               <div className=" border rounded-lg bg-[#FCFCFC]">
-                <img src="/GasEquipment/601-25-AC right_11zon.png" className=" scale-75" />
+                <img
+                  src="/GasEquipment/601-25-AC right_11zon.png"
+                  className=" scale-75"
+                />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">Model 601</h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">Compact Single Stage Cylinder Regulator</p>
+              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+                Model 601
+              </h1>
+              <p className="text-[#000] opacity-60 text-sm font-normal">
+                Compact Single Stage Cylinder Regulator
+              </p>
             </Link>
-
-            
- 
-            
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ const ProductRange = () => {
 
   return (
     <div>
-      <div className="px-5 sm:px-10 pb-[100px] max-w-[1440px] mx-auto">
+      <div className="px-5 sm:px-10 pb-[100px] max-w-[1440px] mx-auto" id="product">
         <h1 className="text-center mb-[60px] text-4xl font-bold text-[#AA1F2E]">
           Product Range
         </h1>
