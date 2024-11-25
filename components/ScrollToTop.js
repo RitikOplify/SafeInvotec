@@ -36,7 +36,7 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div className=" flex justify-between fixed bottom-16 w-full items-center px-5 sm:px-10">
+    <div className=" flex justify-between fixed z-[51] bottom-16 w-full items-center px-5 sm:px-10">
       <Image
         src={"/whatsapp.png"}
         height={45}
@@ -47,7 +47,7 @@ const ScrollToTop = () => {
       />
       {isVisible && (
         <div
-          className="h-9 w-9 flex items-center z-50 justify-center cursor-pointer bg-[#AA1F2E]"
+          className="h-9 w-9 flex items-center justify-center cursor-pointer bg-[#AA1F2E]"
           onClick={handleScrollToTop}
         >
           <IoIosArrowUp className="text-white text-3xl" />
