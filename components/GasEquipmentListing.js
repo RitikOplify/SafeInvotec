@@ -59,10 +59,10 @@ const GasEquipmentListing = () => {
                   height={100}
                 />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+              <h6 className="text-[#AA1F2E] text-2xl font-medium mt-3">
                 Model 601
-              </h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">
+              </h6>
+              <p className="text-[#000] mt-1 opacity-60 text-sm font-normal">
                 Compact Single Stage Cylinder Regulator
               </p>
             </Link>
@@ -81,10 +81,10 @@ const GasEquipmentListing = () => {
                   height={100}
                 />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+              <h6 className="text-[#AA1F2E] text-2xl font-medium mt-3">
                 Model 601
-              </h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">
+              </h6>
+              <p className="text-[#000] mt-1 opacity-60 text-sm font-normal">
                 Compact Single Stage Cylinder Regulator
               </p>
             </Link>
@@ -103,10 +103,10 @@ const GasEquipmentListing = () => {
                   height={100}
                 />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+              <h6 className="text-[#AA1F2E] text-2xl font-medium mt-3">
                 Model 601
-              </h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">
+              </h6>
+              <p className="text-[#000] mt-1 opacity-60 text-sm font-normal">
                 Compact Single Stage Cylinder Regulator
               </p>
             </Link>
@@ -125,10 +125,10 @@ const GasEquipmentListing = () => {
                   height={100}
                 />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+              <h6 className="text-[#AA1F2E] text-2xl font-medium mt-3">
                 Model 601
-              </h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">
+              </h6>
+              <p className="text-[#000] mt-1 opacity-60 text-sm font-normal">
                 Compact Single Stage Cylinder Regulator
               </p>
             </Link>
@@ -147,10 +147,10 @@ const GasEquipmentListing = () => {
                   height={100}
                 />
               </div>
-              <h1 className="text-[#AA1F2E] text-2xl font-medium mt-3">
+              <h6 className="text-[#AA1F2E] text-2xl font-medium mt-3">
                 Model 601
-              </h1>
-              <p className="text-[#000] opacity-60 text-sm font-normal">
+              </h6>
+              <p className="text-[#000] mt-1 opacity-60 text-sm font-normal">
                 Compact Single Stage Cylinder Regulator
               </p>
             </Link>
