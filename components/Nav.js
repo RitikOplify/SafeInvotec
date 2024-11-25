@@ -3,8 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlineArrowDropDown } from "react-icons/md";
+import { MdOutlineArrowDropUp } from "react-icons/md";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProductOpen, setIsProductOpen] = useState(false);
+  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+
   const menuOpen = () => {
     setIsOpen((prev) => !prev);
   };
@@ -14,7 +19,9 @@ const Nav = () => {
       <div className=" max-w-[1440px] flex md:hidden py-6 px-5 sm:px-10 justify-between shadow-sm items-center relative">
         <i
           className={`${
-            isOpen ? "ri-close-large-fill text-3xl" : "ri-menu-line text-3xl"
+            isOpen
+              ? "ri-close-large-fill text-3xl cursor-pointer"
+              : "ri-menu-line text-3xl cursor-pointer"
           }`}
           onClick={menuOpen}
         ></i>
@@ -53,18 +60,184 @@ const Nav = () => {
             >
               CONTACT US
             </Link>
-            <Link
-              className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={"/#product"}
+            <div
+              onClick={() => {
+                setIsProductOpen((prev) => !prev);
+              }}
+              className="hover:border-b cursor-pointer w-fit flex items-center gap-2   hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
             >
-              PRODUCTS
-            </Link>
-            <Link
-              className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
+              PRODUCTS{" "}
+              {isProductOpen ? (
+                <MdOutlineArrowDropUp />
+              ) : (
+                <MdOutlineArrowDropDown />
+              )}
+            </div>
+
+            {isProductOpen && (
+              <div className="px-5 bg-gray-100 w-full py-4 flex flex-col gap-4">
+                <div className=" text-base text-left">
+                  <h3 className=" font-bold text-black mb-4">
+                    INDUSTRIAL GAS EQUIPMENTS
+                  </h3>
+                  <ul>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Regulators
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Torches
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Flashback Arrestors
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Panels
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Accessories
+                    </li>
+                  </ul>
+                </div>
+
+                <div className=" text-base text-left">
+                  <h3 className=" font-bold text-black mb-4">
+                    SPECIALITY GAS EQUIPMENTS (GRADE 5)
+                  </h3>
+                  <ul>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Regulators
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Panels
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Accessories
+                    </li>
+                  </ul>
+                </div>
+
+                <div className=" text-base text-left">
+                  <h3 className=" font-bold text-black mb-4">
+                    ULTRA HIGH PURITY GAS EQUIPMENTS (GRADE 6)
+                  </h3>
+                  <ul>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Regulators
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Panels
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Point of Use Systems
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Accessories
+                    </li>
+                  </ul>
+                </div>
+
+                <div className=" text-base text-left">
+                  <h3 className=" font-bold text-black mb-4">
+                    BRAZING FILLER AND FLUXES
+                  </h3>
+                  <ul>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Filler Metals
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Fluxes
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Pastes
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Custom Shapes
+                    </li>
+                  </ul>
+                </div>
+
+                <div className=" text-base text-left">
+                  <h3 className=" font-bold text-black mb-4">GAS FLUX</h3>
+                  <ul>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Flux
+                    </li>
+                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      Tank
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            <div
+              onClick={() => {
+                setIsIndustriesOpen((prev) => !prev);
+              }}
+              className="hover:border-b w-fit flex cursor-pointer items-center gap-2  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
               href={"/"}
             >
-              INDUSTRIES
-            </Link>
+              INDUSTRIES import{" "}
+              {isIndustriesOpen ? (
+                <MdOutlineArrowDropUp />
+              ) : (
+                <MdOutlineArrowDropDown />
+              )}
+            </div>
+
+            {isIndustriesOpen && (
+              <div className=" flex flex-col text-left w-full bg-gray-100">
+                <Link
+                  href={"/brazzing?automotive"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  Aerospace
+                </Link>
+                <Link
+                  href={"/brazzing?hvac"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  Automotive
+                </Link>
+                <Link
+                  href={"/brazzing?Electrical"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  Electrical
+                </Link>
+                <Link
+                  href={"/brazzing?HVAC/R"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  HVAC/R
+                </Link>
+                <Link
+                  href={"/brazzing?Medical"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  Medical
+                </Link>
+                <Link
+                  href={"/brazzing?Microelectronics"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  Microelectronics
+                </Link>
+                <Link
+                  href={"/brazzing?OilGas"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  Oil & Gas
+                </Link>
+                <Link
+                  href={"/brazzing?Others"}
+                  className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                >
+                  Others
+                </Link>
+              </div>
+            )}
+
             <button className="bg-[#AA1F2E] py-2 px-3 w-fit rounded-lg text-white">
               REQUEST A QUOTE
             </button>
