@@ -30,7 +30,7 @@ const ScrollToTop = () => {
   }, []);
 
   const openWhatsAppChat = () => {
-    // const phoneNumber = "7389262655";
+    // const phoneNumber = "";
     // const url = `https://wa.me/${phoneNumber}`;
     // window.open(url, "_blank");
   };
