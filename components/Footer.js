@@ -3,16 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io5";
-import { IoIosArrowUp } from "react-icons/io";
-const Footer = () => {
-  const handleScrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
+const Footer = () => {
   return (
     <div className="border-t-2">
       <div className="px-5 sm:px-10 pb-[60px] pt-[70px] max-w-[1440px] mx-auto">
@@ -141,15 +133,6 @@ const Footer = () => {
             >
               Gas Distribution System
             </Link>
-          </div>
-          <div className=" my-auto flex gap-8 flex-col items-center">
-            <IoLogoWhatsapp className="text-[#7BE57D] text-5xl" />
-            <div
-              className=" h-9 w-9 flex items-center justify-center cursor-pointer bg-[#AA1F2E]"
-              onClick={handleScrollToTop}
-            >
-              <IoIosArrowUp className=" text-white text-3xl" />
-            </div>
           </div>
         </div>
       </div>
