@@ -47,7 +47,7 @@ const ScrollToTop = () => {
       />
       {isVisible && (
         <div
-          className="h-9 w-9 flex items-center justify-center cursor-pointer bg-[#AA1F2E]"
+          className="h-9 w-9 flex items-center z-50 justify-center cursor-pointer bg-[#AA1F2E]"
           onClick={handleScrollToTop}
         >
           <IoIosArrowUp className="text-white text-3xl" />
