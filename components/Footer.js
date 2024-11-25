@@ -34,9 +34,12 @@ const Footer = () => {
               </button>
               <div className="">
                 <p>or give us a call at </p>
-                <p className=" font-extrabold text-xl text-[#AA1F2E]">
+                <Link
+                  href={"tel:+919769035683"}
+                  className=" font-extrabold text-xl text-[#AA1F2E]"
+                >
                   +91 9769035683
-                </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -50,19 +53,25 @@ const Footer = () => {
             <div className=" flex flex-col gap-4">
               <p>
                 <span className=" font-semibold text-base">Call Us: </span>{" "}
-                <span className="text-[#AA1F2E] font-semibold text-base">
+                <Link
+                  href={"tel:+919769035683"}
+                  className="text-[#AA1F2E] font-semibold text-base"
+                >
                   +91 9769035683
-                </span>
+                </Link>
               </p>
-              <Link href={""}>
+              <Link href={"mailto:info@safeinvotec.com"}>
                 <span className=" font-semibold text-base">Email: </span>{" "}
                 <span className="text-[#AA1F2E] font-semibold text-base">
                   info@safeinvotec.com
                 </span>
               </Link>
-              <div className="bg-[#172B4D] text-white w-10 h-10 text-xl flex items-center justify-center">
+              <Link
+                href={""}
+                className="bg-[#172B4D] text-white w-10 h-10 text-xl flex items-center justify-center"
+              >
                 <FaLinkedinIn />
-              </div>
+              </Link>
             </div>
           </div>
 

@@ -29,24 +29,31 @@ const ScrollToTop = () => {
     };
   }, []);
 
+  const openWhatsAppChat = () => {
+    // const phoneNumber = "7389262655";
+    // const url = `https://wa.me/${phoneNumber}`;
+    // window.open(url, "_blank");
+  };
+
   return (
-    isVisible && (
-      <div className="my-auto z-50 fixed bottom-16 right-5 sm:right-10 flex gap-8 flex-col items-center">
-        <Image
-          src={"/whatsapp.png"}
-          height={45}
-          width={45}
-          alt="whatsapp icon"
-          className="text-[#7BE57D] cursor-pointer"
-        />
+    <div className=" flex justify-between fixed bottom-16 w-full items-center px-5 sm:px-10">
+      <Image
+        src={"/whatsapp.png"}
+        height={45}
+        width={45}
+        alt="whatsapp icon"
+        className="text-[#7BE57D] cursor-pointer"
+        onClick={openWhatsAppChat}
+      />
+      {isVisible && (
         <div
           className="h-9 w-9 flex items-center justify-center cursor-pointer bg-[#AA1F2E]"
           onClick={handleScrollToTop}
         >
           <IoIosArrowUp className="text-white text-3xl" />
         </div>
-      </div>
-    )
+      )}
+    </div>
   );
 };
 
