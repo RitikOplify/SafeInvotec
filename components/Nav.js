@@ -16,47 +16,62 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className=" max-w-[1440px] flex md:hidden py-6 px-5 sm:px-10 justify-between shadow-sm items-center relative">
-        <i
-          className={`${
-            isOpen
-              ? "ri-close-large-fill text-3xl cursor-pointer"
-              : "ri-menu-line text-3xl cursor-pointer"
-          }`}
-          onClick={menuOpen}
-        ></i>
-        <Link href={"/"}>
-          <Image
-            width={180}
-            height={10}
-            alt="logo"
-            className=" object-cover"
-            src="/Logo/SafeInvotecLogo.png"
-          />
-        </Link>
+      <div className=" max-w-[1440px] flex md:hidden px-5 sm:px-10 justify-between shadow-sm items-center relative">
+        <div className=" w-full h-16"></div>
+        <div className=" fixed top-0 left-0 flex justify-between w-full h-16 items-center px-5 sm:px-10 z-50 bg-white">
+          <i
+            className={`${
+              isOpen
+                ? "ri-close-large-fill text-3xl cursor-pointer"
+                : "ri-menu-line text-3xl cursor-pointer"
+            }`}
+            onClick={menuOpen}
+          ></i>
+          <Link href={"/"}>
+            <Image
+              width={180}
+              height={10}
+              alt="logo"
+              className=" object-cover"
+              src="/Logo/SafeInvotecLogo.png"
+            />
+          </Link>
+        </div>
         {isOpen && (
-          <div className="flex md:hidden flex-col items-start absolute top-[100%] left-0 z-10 w-full bg-white gap-3 p-5 border">
+          <div className="flex md:hidden flex-col items-start fixed max-h-[93%] overflow-y-auto top-16 z-50 left-0 w-full bg-white gap-3 p-5 border">
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
               href={"/"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               ABOUT US
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
               href={"/certifications"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               CERTIFICATIONS
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
               href={"/"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               CAREERS
             </Link>
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
               href={"/"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               CONTACT US
             </Link>
@@ -81,19 +96,45 @@ const Nav = () => {
                     INDUSTRIAL GAS EQUIPMENTS
                   </h3>
                   <ul>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Regulators
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Torches
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Flashback Arrestors
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Panels
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Accessories
                     </li>
                   </ul>
@@ -104,13 +145,28 @@ const Nav = () => {
                     SPECIALITY GAS EQUIPMENTS (GRADE 5)
                   </h3>
                   <ul>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Regulators
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Panels
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Accessories
                     </li>
                   </ul>
@@ -121,16 +177,36 @@ const Nav = () => {
                     ULTRA HIGH PURITY GAS EQUIPMENTS (GRADE 6)
                   </h3>
                   <ul>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Regulators
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Panels
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Point of Use Systems
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Accessories
                     </li>
                   </ul>
@@ -141,16 +217,36 @@ const Nav = () => {
                     BRAZING FILLER AND FLUXES
                   </h3>
                   <ul>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Filler Metals
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Fluxes
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Pastes
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Custom Shapes
                     </li>
                   </ul>
@@ -159,10 +255,20 @@ const Nav = () => {
                 <div className=" text-base text-left">
                   <h3 className=" font-bold text-black mb-4">GAS FLUX</h3>
                   <ul>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Flux
                     </li>
-                    <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                    <li
+                      className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
                       Tank
                     </li>
                   </ul>
@@ -177,7 +283,7 @@ const Nav = () => {
               className="hover:border-b w-fit flex cursor-pointer items-center gap-2  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
               href={"/"}
             >
-              INDUSTRIES import{" "}
+              INDUSTRIES
               {isIndustriesOpen ? (
                 <MdOutlineArrowDropUp />
               ) : (
@@ -190,16 +296,25 @@ const Nav = () => {
                 <Link
                   href={"/brazzing?automotive"}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                 >
                   Aerospace
                 </Link>
                 <Link
                   href={"/brazzing?hvac"}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                 >
                   Automotive
                 </Link>
                 <Link
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                   href={"/brazzing?Electrical"}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                 >
@@ -207,29 +322,44 @@ const Nav = () => {
                 </Link>
                 <Link
                   href={"/brazzing?HVAC/R"}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                 >
                   HVAC/R
                 </Link>
                 <Link
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                   href={"/brazzing?Medical"}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                 >
                   Medical
                 </Link>
                 <Link
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                   href={"/brazzing?Microelectronics"}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                 >
                   Microelectronics
                 </Link>
                 <Link
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                   href={"/brazzing?OilGas"}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                 >
                   Oil & Gas
                 </Link>
                 <Link
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
                   href={"/brazzing?Others"}
                   className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                 >
@@ -238,30 +368,68 @@ const Nav = () => {
               </div>
             )}
 
-            <button className="bg-[#AA1F2E] py-2 px-3 w-fit rounded-lg text-white">
+            <button
+              className="bg-[#AA1F2E] py-2 px-3 w-fit rounded-lg text-white"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
               REQUEST A QUOTE
             </button>
           </div>
         )}
       </div>
-
-      <div className="hidden md:block">
+      <div className=" w-full h-[143px] opacity-0 hidden md:block"></div>
+      <div className="hidden fixed top-0 left-0 w-full z-50 md:block">
         <div className=" bg-[#AA1F2E]">
           <div className="h-[54px] items-center font-bold text-[14px] text-white flex justify-end gap-5 py-4 pr-11 max-w-[1440px] mx-auto">
-            <Link href={"/"}>ABOUT US</Link>
+            <Link
+              href={"/"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              ABOUT US
+            </Link>
             <span>/</span>
-            <Link href={"/certifications"}>CERTIFICATIONS</Link>
+            <Link
+              href={"/certifications"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              CERTIFICATIONS
+            </Link>
             <span>/</span>
 
-            <Link href={"/"}>CAREERS</Link>
+            <Link
+              href={"/"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              CAREERS
+            </Link>
             <span>/</span>
 
-            <Link href={"/"}>CONTACT US</Link>
+            <Link
+              href={"/"}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              CONTACT US
+            </Link>
           </div>
         </div>
 
-        <div className="max-w-[1440px] mx-auto flex font-semibold text-[16px] justify-between items-center py-6 shadow-sm px-10">
-          <Link href={"/"}>
+        <div className="max-w-[1440px] bg-white mx-auto flex font-semibold text-[16px] justify-between items-center py-6 shadow-sm px-10">
+          <Link
+            href={"/"}
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
             <Image
               width={180}
               height={10}
@@ -284,19 +452,44 @@ const Nav = () => {
                       INDUSTRIAL GAS EQUIPMENTS
                     </h3>
                     <ul>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Regulators
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Torches
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Flashback Arrestors
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Panels
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Accessories
                       </li>
                     </ul>
@@ -307,13 +500,28 @@ const Nav = () => {
                       SPECIALITY GAS EQUIPMENTS (GRADE 5)
                     </h3>
                     <ul>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Regulators
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Panels
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Accessories
                       </li>
                     </ul>
@@ -324,16 +532,36 @@ const Nav = () => {
                       ULTRA HIGH PURITY GAS EQUIPMENTS (GRADE 6)
                     </h3>
                     <ul>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Regulators
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Panels
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Point of Use Systems
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Accessories
                       </li>
                     </ul>
@@ -344,16 +572,36 @@ const Nav = () => {
                       BRAZING FILLER AND FLUXES
                     </h3>
                     <ul>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Filler Metals
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Fluxes
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Pastes
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Custom Shapes
                       </li>
                     </ul>
@@ -362,10 +610,20 @@ const Nav = () => {
                   <div className=" text-base text-left">
                     <h3 className=" font-bold text-black mb-4">GAS FLUX</h3>
                     <ul>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Flux
                       </li>
-                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                      <li
+                        className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100"
+                        onClick={() => {
+                          setIsOpen(false);
+                        }}
+                      >
                         Tank
                       </li>
                     </ul>
@@ -384,48 +642,72 @@ const Nav = () => {
                 <div className=" flex flex-col text-left w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
                   <Link
                     href={"/brazzing?automotive"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     Aerospace
                   </Link>
                   <Link
                     href={"/brazzing?hvac"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     Automotive
                   </Link>
                   <Link
                     href={"/brazzing?Electrical"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     Electrical
                   </Link>
                   <Link
                     href={"/brazzing?HVAC/R"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     HVAC/R
                   </Link>
                   <Link
                     href={"/brazzing?Medical"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     Medical
                   </Link>
                   <Link
                     href={"/brazzing?Microelectronics"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     Microelectronics
                   </Link>
                   <Link
                     href={"/brazzing?OilGas"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     Oil & Gas
                   </Link>
                   <Link
                     href={"/brazzing?Others"}
+                    onClick={() => {
+                      setIsOpen(false);
+                    }}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                   >
                     Others
@@ -434,7 +716,12 @@ const Nav = () => {
               </div>
             </div>
 
-            <button className="bg-[#AA1F2E] h-[42px] py-2 px-3 rounded-lg text-white">
+            <button
+              className="bg-[#AA1F2E] h-[42px] py-2 px-3 rounded-lg text-white"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
               REQUEST A QUOTE
             </button>
           </div>
