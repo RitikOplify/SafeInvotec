@@ -9,9 +9,6 @@ const Nav = () => {
     setIsOpen((prev) => !prev);
   };
 
-  const [isOpenProduct, setIsOpenProduct] = useState(false);
-  const [isOpenSolutions, setIsOpenSolutions] = useState(false);
-
   return (
     <nav>
       <div className=" max-w-[1440px] flex md:hidden py-6 px-5 sm:px-10 justify-between shadow-sm items-center relative">
@@ -101,56 +98,117 @@ const Nav = () => {
             />
           </Link>
           <div className=" text-end flex gap-5 items-center ">
-            <div className="relative">
-              <div
-                className="px-2 py-1 cursor-pointer gap-3 w-auto flex items-center justify-between"
-                onClick={() => {
-                  setIsOpenSolutions(false);
-                  setIsOpenProduct((prev) => !prev);
-                }}
-              >
+            <div className="group">
+              <div className="px-2 py-1 cursor-pointer gap-3 flex items-center justify-between">
                 <span>PRODUCTS</span>
                 <IoIosArrowDown className="text-xl" />
               </div>
 
-              {isOpenProduct && (
-                <div className="absolute flex flex-col text-left z-10 font-normal mt-2 text-gray-600 left-0 w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
-                  <div
-                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-                    onClick={() => (window.location.href = "")}
-                  >
-                    Automotive
+              <div className="absolute hidden group-hover:block pt-2 w-screen z-10 font-normal text-gray-600 right-0">
+                <div className="grid px-5 sm:px-10  grid-cols-1 shadow-lg md:grid-cols-3 py-4 bg-gray-50 gap-4">
+                  <div className=" text-base text-left">
+                    <h3 className=" font-bold text-black mb-4">
+                      INDUSTRIAL GAS EQUIPMENTS
+                    </h3>
+                    <ul>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Regulators
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Torches
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Flashback Arrestors
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Panels
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Accessories
+                      </li>
+                    </ul>
                   </div>
-                  <div
-                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-                    onClick={() => (window.location.href = "")}
-                  >
-                    HVAC & Refrigeration
+
+                  <div className=" text-base text-left">
+                    <h3 className=" font-bold text-black mb-4">
+                      SPECIALITY GAS EQUIPMENTS (GRADE 5)
+                    </h3>
+                    <ul>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Regulators
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Panels
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Accessories
+                      </li>
+                    </ul>
                   </div>
-                  <div
-                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
-                    onClick={() => (window.location.href = "")}
-                  >
-                    Medical
+
+                  <div className=" text-base text-left">
+                    <h3 className=" font-bold text-black mb-4">
+                      ULTRA HIGH PURITY GAS EQUIPMENTS (GRADE 6)
+                    </h3>
+                    <ul>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Regulators
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Panels
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Point of Use Systems
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Accessories
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className=" text-base text-left">
+                    <h3 className=" font-bold text-black mb-4">
+                      BRAZING FILLER AND FLUXES
+                    </h3>
+                    <ul>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Filler Metals
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Fluxes
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Pastes
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Custom Shapes
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className=" text-base text-left">
+                    <h3 className=" font-bold text-black mb-4">GAS FLUX</h3>
+                    <ul>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Flux
+                      </li>
+                      <li className=" p-2  rounded-sm cursor-pointer hover:bg-gray-100">
+                        Tank
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
 
-            <div className="relative">
-              <div
-                className="px-2 py-1 cursor-pointer gap-3 flex items-center justify-between"
-                onClick={() => {
-                  setIsOpenProduct(false);
-                  setIsOpenSolutions((prev) => !prev);
-                }}
-              >
+            <div className="relative group">
+              <div className="px-2 py-1 cursor-pointer gap-3 flex items-center justify-between">
                 <span>INDUSTRIES</span>
                 <IoIosArrowDown className="text-xl" />
               </div>
 
-              {isOpenSolutions && (
-                <div className="absolute flex flex-col text-left z-10 font-normal mt-2 text-gray-600 left-0 w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
+              <div className="absolute hidden group-hover:block py-2  z-10 font-normal text-gray-600 left-0">
+                <div className=" flex flex-col text-left w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
                   <Link
                     href={"/brazzing?automotive"}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
@@ -169,7 +227,6 @@ const Nav = () => {
                   >
                     Electrical
                   </Link>
-
                   <Link
                     href={"/brazzing?HVAC/R"}
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
@@ -201,7 +258,7 @@ const Nav = () => {
                     Others
                   </Link>
                 </div>
-              )}
+              </div>
             </div>
 
             <button className="bg-[#AA1F2E] h-[42px] py-2 px-3 rounded-lg text-white">
