@@ -644,7 +644,7 @@ const Nav = () => {
                 </div>
 
                 <div className="absolute hidden group-hover:block py-2  z-10 font-normal text-gray-600 left-0">
-                  <div className=" flex flex-col text-left w-auto border border-gray-300 bg-gray-50 rounded-md shadow-lg">
+                  <div className=" flex flex-col text-left w-auto border overflow-hidden border-gray-300 bg-gray-50 rounded-md shadow-lg">
                     <Link
                       href={"/brazzing?automotive"}
                       onClick={() => {
