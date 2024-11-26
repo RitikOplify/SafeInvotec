@@ -44,7 +44,8 @@ const Certifications = () => {
   ];
 
   return (
-    <div className="px-5 sm:px-10 py-[60px]">
+   <div>
+    <div className=" max-w-[1440px] mx-auto px-5 sm:px-10 py-[60px]">
       <h1 className="text-[#AA1F2E] text-[42px] pb-10 uppercase font-normal">
         Certifications
       </h1>
@@ -82,6 +83,7 @@ const Certifications = () => {
         ))}
       </div>
     </div>
+   </div>
   );
 };
 
