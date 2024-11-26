@@ -67,19 +67,19 @@ const ProductRange = () => {
                 />
                 <Link
                   href={item.link}
-                  className="z-30 h-12 w-12 bg-[#AA1F2E] grayscale group-hover:grayscale-0 transition-all duration-500 text-white absolute right-6 bottom-6 flex items-center justify-center text-4xl"
+                  className="z-30 h-12 w-12 bg-[#AA1F2E] grayscale group-hover:grayscale-0 transition-all duration-500 text-white absolute right-6 bottom-[17px] sm:bottom-6 flex items-center justify-center text-4xl"
                 >
                   <IoIosArrowForward />
                 </Link>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#AA1F2E] to-red-0 opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
                 <div className="relative z-10 mt-auto overflow-hidden">
-                  <div className="pl-8 py-4 transform translate-y-[calc(100%-4rem)] group-hover:translate-y-0 transition-transform duration-500">
-                    <h1 className="font-bold text-2xl mb-2 text-white">
+                  <div className="pl-6 py-4 transform translate-y-[calc(100%-4rem)] group-hover:translate-y-0 transition-transform duration-500">
+                    <h1 className="font-bold text-xl sm:text-2xl mb-2 text-white">
                       {item.title}
                     </h1>
 
-                    <div className="overflow-hidden w-1/2">
-                      <p className="text-white text-base font-normal transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                    <div className="overflow-hidden w-[65%] sm:w-1/2">
+                      <p className="text-white text-sm font-normal transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                         {item.description}
                       </p>
                     </div>
