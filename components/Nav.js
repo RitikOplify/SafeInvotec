@@ -253,7 +253,9 @@ const Nav = () => {
                 </div>
 
                 <div className=" text-base text-left">
-                  <h3 className=" font-bold text-black mb-2 w-fit hover:border-b-[1.5px] hover:border-b-black transition-all duration-300">GAS FLUX</h3>
+                  <h3 className=" font-bold text-black mb-2 w-fit hover:border-b-[1.5px] hover:border-b-black transition-all duration-300">
+                    GAS FLUX
+                  </h3>
                   <ul className=" px-1">
                     <li
                       className=" py-1 cursor-pointer w-fit hover:border-b-[1.5px] hover:border-b-black transition-all duration-300"
@@ -446,7 +448,7 @@ const Nav = () => {
                   <IoIosArrowDown className="text-xl" />
                 </div>
 
-                <div className="absolute hidden group-hover:block pt-2 w-screen z-10 font-normal text-gray-600 right-0">
+                <div className="absolute max-w-[1440px] left-1/2 transform -translate-x-1/2 hidden group-hover:block pt-2 w-screen z-10 font-normal text-gray-600 right-0">
                   <div className="grid px-5 sm:px-10  grid-cols-1 shadow-lg md:grid-cols-3 py-4 bg-gray-50 gap-4">
                     <div className=" text-base text-left">
                       <h3 className=" font-bold text-black mb-2 w-fit hover:border-b-[1.5px] hover:border-b-black transition-all duration-300">
