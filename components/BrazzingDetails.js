@@ -62,7 +62,7 @@ const BrazzingDetails = () => {
       <div className="relative">
         <Image
           src="/GasEquipment/gas-equipment-bg.jpg"
-          className="absolute top-0 h-full w-full -z-10 left-0 object-cover"
+          className="absolute top-0 h-full opacity-50 w-full -z-10 left-0 object-cover"
           layout="fill"
           alt="Background Image"
         />

@@ -44,7 +44,7 @@ const GasEquipment = () => {
       <div className=" relative">
         <Image
           src="/GasEquipment/gas-equipment-bg.jpg"
-          className=" absolute top-0 h-full w-full -z-10 left-0 object-cover"
+          className=" absolute opacity-50 top-0 h-full w-full -z-10 left-0 object-cover"
           layout="fill"
           alt="Background Image"
         />
