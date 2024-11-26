@@ -381,10 +381,10 @@ const Nav = () => {
           </div>
         )}
       </div>
-      <div className=" w-full h-[143px] opacity-0 hidden md:block"></div>
+      <div className=" w-full h-[111px] opacity-0 hidden md:block"></div>
       <div className="hidden fixed top-0 left-0 w-full z-50 md:block">
         <div className=" bg-[#AA1F2E]">
-          <div className="h-[54px] items-center font-bold text-[14px] text-white flex justify-end gap-5 py-4 pr-11 max-w-[1440px] mx-auto">
+          <div className="items-center font-medium text-[14px] text-white flex justify-end gap-5 py-2 pr-11 max-w-[1440px] mx-auto">
             <Link
               href={"/"}
               onClick={() => {
@@ -426,7 +426,7 @@ const Nav = () => {
         </div>
 
         <div className=" bg-white">
-          <div className="max-w-[1440px] bg-white mx-auto flex font-semibold text-[16px] justify-between items-center py-6 shadow-sm px-10">
+          <div className="max-w-[1440px] bg-white mx-auto flex font-semibold text-[16px] justify-between items-center py-4 shadow-sm px-10">
             <Link
               href={"/"}
               onClick={() => {
