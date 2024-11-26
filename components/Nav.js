@@ -38,7 +38,7 @@ const Nav = () => {
           </Link>
         </div>
         {isOpen && (
-          <div className="flex md:hidden flex-col items-start fixed max-h-[93%] overflow-y-auto top-16 z-50 left-0 w-full bg-white gap-3 p-5 border">
+          <div className="flex hide-scrollbar md:hidden flex-col items-start fixed max-h-[93%] overflow-y-auto top-16 z-50 left-0 w-full bg-white gap-3 p-5 border">
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
               href={"/"}
