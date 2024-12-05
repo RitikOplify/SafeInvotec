@@ -41,7 +41,7 @@ const Nav = () => {
           <div className="flex hide-scrollbar md:hidden flex-col items-start fixed max-h-[93%] overflow-y-auto top-16 z-50 left-0 w-full bg-white gap-3 p-5 border">
             <Link
               className="hover:border-b w-fit  hover:border-[#AA1F2E] hover:text-[#AA1F2E] transition-all duration-300"
-              href={"/"}
+              href={"/about-us"}
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -386,7 +386,7 @@ const Nav = () => {
         <div className=" bg-[#AA1F2E]">
           <div className="items-center font-medium text-[14px] text-white flex justify-end gap-5 py-2 pr-11 max-w-[1440px] mx-auto">
             <Link
-              href={"/"}
+              href={"/about-us"}
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -415,7 +415,7 @@ const Nav = () => {
             <span>/</span>
 
             <Link
-              href={"/"}
+              href={"/contact-us"}
               onClick={() => {
                 setIsOpen(false);
               }}

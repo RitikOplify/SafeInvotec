@@ -1,6 +1,6 @@
 import "./globals.css";
 import "remixicon/fonts/remixicon.css";
-
+import { Toaster } from 'react-hot-toast';
 import { Poppins } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
       >
         <Nav />
         {children}
+        <Toaster />
         <ScrollToTop />
         <Footer />
       </body>
