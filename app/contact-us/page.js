@@ -17,21 +17,21 @@ const ContactForm = () => {
 
   const onSubmit = async (data) => {
     console.log(data);
-    setLoading(true);
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-    if (response.ok) {
-      setLoading(false);
-      toast.success("Email sent successfully!");
-    } else {
-      setLoading(false);
-      toast.error("Failed to send email.");
-    }
+    // setLoading(true);
+    // const response = await fetch("/api/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(data),
+    // });
+    // if (response.ok) {
+    //   setLoading(false);
+    //   toast.success("Email sent successfully!");
+    // } else {
+    //   setLoading(false);
+    //   toast.error("Failed to send email.");
+    // }
   };
   return (
     <div>
