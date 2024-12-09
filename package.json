@@ -8,11 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "overrides": {
-    "typewriter-effect": {
-      "react": "^19.0.0"
-    }
-  },
+  
   "dependencies": {
     "next": "15.0.3",
     "nodemailer": "^6.9.16",
